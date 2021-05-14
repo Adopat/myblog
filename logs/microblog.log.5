@@ -1,0 +1,103 @@
+2021-05-11 19:46:55,337 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-11 19:50:50,504 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-11 19:57:28,851 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-11 19:57:46,538 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-11 20:01:12,693 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-11 20:01:24,553 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-11 20:02:48,676 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-11 20:03:00,311 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-11 20:05:45,830 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-12 19:15:06,864 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-12 19:36:36,603 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-12 19:47:51,284 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-12 19:52:59,841 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:37]
+2021-05-13 13:10:07,667 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:39]
+2021-05-13 13:12:46,691 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:39]
+2021-05-13 13:27:53,193 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:41]
+2021-05-13 16:42:17,715 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:41]
+2021-05-13 16:43:57,702 ERROR: Exception on /reset_password_request [POST] [in /home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/adopat/myblog/app/routes.py", line 166, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/adopat/myblog/app/email.py", line 11, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "/home/adopat/myblog/app/models.py", line 57, in get_reset_password_token
+    return jwt.encode(
+AttributeError: 'str' object has no attribute 'decode'
+2021-05-13 16:50:39,631 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:41]
+2021-05-13 16:50:49,036 ERROR: Exception on /reset_password_request [POST] [in /home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/adopat/myblog/app/routes.py", line 166, in reset_password_request
+    send_password_reset_email(user)
+  File "/home/adopat/myblog/app/email.py", line 11, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "/home/adopat/myblog/app/models.py", line 57, in get_reset_password_token
+    return jwt.encode(
+AttributeError: 'str' object has no attribute 'decode'
+2021-05-14 11:35:25,623 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:42]
+2021-05-14 11:36:48,259 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:42]
+2021-05-14 11:38:09,586 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:42]
+2021-05-14 11:42:28,610 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:42]
+2021-05-14 11:49:49,511 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:42]
+2021-05-14 11:49:51,327 ERROR: Exception on / [GET] [in /home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/adopat/myblog/app/routes.py", line 40, in index
+    return render_template('index.html', title='Home', form=form,
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/adopat/myblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/adopat/myblog/venv/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/adopat/myblog/app/templates/base.html", line 72, in template
+    {% block content %}
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2021-05-14 11:50:12,491 INFO: Microblog startup [in /home/adopat/myblog/app/__init__.py:42]
